@@ -1,0 +1,7 @@
+version: '2'
+services:
+  stress:
+    image: progrium/stress
+    command: --cpu 1 --io 1 --vm 1 --vm-bytes 128MB
+    labels:
+      - "service=stress"
